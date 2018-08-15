@@ -15,7 +15,7 @@ setuptools.setup(
     author="Reut Sharabani",
     author_email="reut.sharabani@gmail.com",
     description="library to handle ip ranges (using `ipaddress`)",
-    url="https://github.com/reutsharabani/ipv4range",
+    url="https://github.com/reutsharabani/ip-range",
     classifiers=(
         "Operating System :: OS Independent",
         "Development Status :: 2 - Pre-Alpha",
