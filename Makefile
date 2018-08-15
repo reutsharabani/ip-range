@@ -6,8 +6,8 @@ clean:
 test:
 	python setup.py test
 
-build:
+build: clean
 	python setup.py bdist_wheel
 
-upload:
+upload: build
 	python -m twine upload dist/*
