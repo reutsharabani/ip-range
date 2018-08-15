@@ -24,3 +24,7 @@ def test_not_contains():
 
 def test_or_eq():
     assert IPv4Range(0, 5) | IPv4Range(5,10) == IPv4Range(0, 10)
+
+
+def test_len():
+    assert len(IPv4Range(0, 5)) == 5
