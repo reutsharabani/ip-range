@@ -51,3 +51,6 @@ class IPv4Range():
 
     def __str__(self):
         return '<-->'.join(map(str, map(IPv4Address, (self.start, self.end, ))))
+
+    def __repr__(self):
+        return 'IPv4Range: ' + str(self)
