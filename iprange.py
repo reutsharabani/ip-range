@@ -50,7 +50,7 @@ class IPv4Range():
         return self.range == other_range.range
 
     def __str__(self):
-        return '<-->'.join(map(str, map(IPv4Address, (self.start, self.end, ))))
+        return '-'.join(map(str, map(IPv4Address, (self.start, self.end, ))))
 
     def __repr__(self):
         return 'IPv4Range: ' + str(self)
