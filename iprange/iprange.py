@@ -57,3 +57,6 @@ class IPv4Range():
 
     def __hash__(self):
         return hash(self.range)
+
+    def __len__(self):
+        return len(self.range)
