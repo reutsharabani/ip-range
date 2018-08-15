@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from ipaddress import IPv4Address
-from iprange import IPv4Range
+from iprange.iprange import IPv4Range
 
 assert list(IPv4Range(0, 5)) == list(map(IPv4Address, range(5)))
 assert IPv4Range(0, 5)[1] == IPv4Address(1)
