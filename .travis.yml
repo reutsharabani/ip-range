@@ -9,4 +9,8 @@ script:
   - make build
 
 after_success:
-  - echo "tested and build $TRAVIS_BRANCH"
+  - echo "tested and built $TRAVIS_BRANCH"
+
+notifications:
+  email:
+    - reut.sharabani@gmail.com
