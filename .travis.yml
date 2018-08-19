@@ -1,1 +1,12 @@
-script: make build
+sudo: required
+
+language: python
+
+before_install:
+  - echo "Build iprange"
+
+script:
+  - make build
+
+after_success:
+  - echo "tested and build $TRAVIS_BRANCH"
