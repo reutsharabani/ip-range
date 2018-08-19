@@ -2,6 +2,8 @@ sudo: required
 
 language: python
 
+python: 3.7
+
 before_install:
   - echo "updating ..."
   - sudo apt-get update
