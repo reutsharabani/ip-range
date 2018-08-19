@@ -6,7 +6,7 @@ clean:
 test:
 	python setup.py test
 
-build: clean
+build: test
 	python setup.py bdist_wheel
 
 upload: build
