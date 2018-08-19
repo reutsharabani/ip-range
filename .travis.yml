@@ -3,7 +3,13 @@ sudo: required
 language: python
 
 before_install:
-  - echo "Build iprange"
+  - echo "updating ..."
+  - sudo apt-get update
+  - echo "installing make ..."
+  - sudo apt-get install make
+  - echo "installing pytest ..."
+  - pip install pytest
+  - echo "build iprange ..."
 
 script:
   - make build
