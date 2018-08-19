@@ -7,7 +7,7 @@ def read_file(name):
 
 setuptools.setup(
     name='ip-range',
-    version='0.0.5',
+    version='0.0.6',
     long_description=read_file('README.md'),
     packages=['iprange'],
     tests_require=['pytest'],
